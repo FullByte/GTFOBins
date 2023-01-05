@@ -3,13 +3,13 @@ functions:
   file-read:
     - code: |
         LFILE=file_to_read
-        join -a 2 /dev/null $LFILE
+        w3m "$LFILE" -dump
   suid:
     - code: |
         LFILE=file_to_read
-        ./join -a 2 /dev/null $LFILE
+        ./w3m "$LFILE" -dump
   sudo:
     - code: |
         LFILE=file_to_read
-        sudo join -a 2 /dev/null $LFILE
+        sudo w3m "$LFILE" -dump
 ---

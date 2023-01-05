@@ -1,4 +1,5 @@
 ---
+description: The `uname -m` command can be used in place of `arch` to obtain the architecture.
 functions:
   shell:
     - code: setarch $(arch) /bin/sh
